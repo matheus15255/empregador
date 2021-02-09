@@ -1,0 +1,153 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: montserrat;
+}
+nav {
+	background: #d67d07;
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 100px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: #6495ED;
+	transition: .5s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+        top: 50px;
+		font-size: 30px;
+		padding-left: 1000px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #1d075f;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #5434af;
+	}
+	#check:checked ~ ul {
+		left: 0;
+    }
+}
+.box{
+    width: 200px;
+    padding: 100px;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.box input[type = "text"],.box input[type = "password"]{
+    border:10px;
+    background: none;
+    display: block;
+    margin: 20px 30px;
+    text-align: 100px;
+    border: 5px solid orange;
+    padding: 20px 200px;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    transition: 0.25s;
+    background-color: rgba(255, 255, 255, .1);
+}
+.te{
+    position: absolute;
+    left: 450px;
+    top: 488px;
+    font-size: 15px;
+    color: black;
+}
+.tes{
+    color: black;
+    position: absolute;
+    left: 1080px;
+    top: 489px;
+    font-size: 11px;
+}
+.st{
+    position: absolute;
+    fonte-family: Arial;
+    left: 800px;
+    top:650px;
+    font-size: 15px;
+    color: black;
+    height: 50px;
+    width: 400px;
+    border-radius: 1px;
+    background: orange;
+    display: block;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
